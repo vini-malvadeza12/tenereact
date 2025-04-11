@@ -2,18 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import Header from './components/header'
+import Footer from './components/footer'
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     
         <>
-        
-    <div className="caixa1">
-        <img src="https://img.icons8.com/?size=100&id=ocmaRApBZ0nV&format=png&color=000000" alt=""/>
-    </div>
-    <div className="container">
+        <Header></Header>
+        <div className="container">
         <div className="gridprodutos">
             <div className="produtos">
                 <img src="https://i.pinimg.com/236x/30/33/15/303315cd9d75c9ad4e12a5a507553098.jpg" alt="" className="produtos"/>
@@ -42,9 +39,7 @@ function App() {
         </div>
         
     </div>
-    <div className="caixa2">
-        <img src="https://img.icons8.com/?size=100&id=ocmaRApBZ0nV&format=png&color=000000" alt=""/>
-    </div>
+   <Footer></Footer>
 
 
         </>    
